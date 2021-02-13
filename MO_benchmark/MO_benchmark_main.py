@@ -181,7 +181,7 @@ if __name__ == "__main__":
 
         igd_values = MOEA.MoTrEO_RSM(task.function1_target, task.function2_target, max_gen=max_gen_target,
                         pop_size=pop_size_target, dim=task.dim_target, pf_target=pf_target, tr_int=transfer_interval,
-                        verbose=True, transfer_coefficients=transfer_coefficients_MO_TrEO_Ms[run])
+                        transfer_coefficients=transfer_coefficients_MO_TrEO_Ms[run])
 
         for j in range(max_gen_target):
             if float(igd_values[j]) < best_IGD:
