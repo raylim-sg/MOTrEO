@@ -2,7 +2,7 @@
 
 import numpy as np
 import random
-from MO_evolutionary_operators import SBX_crossover, polynomial_mutation, binary_tournament, crowding_distance, \
+from MOEA_operators import SBX_crossover, polynomial_mutation, binary_tournament, crowding_distance, \
     sort_distance, fast_non_dominated_sort, check_bounds, \
     binary_tournament_3D, crowding_distance_3D, fast_non_dominated_sort_3D
 from domain_adaptation.probabilisticModel import MixtureModel
