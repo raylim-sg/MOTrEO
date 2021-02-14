@@ -2,11 +2,11 @@
 # The MOEAs are for solving the multi-objective drone routing problems detailed in "MO_routing_tasks.pdf"
 
 import numpy as np
-from MO_routing_operators import selection, fast_non_dominated_sort, crowding_distance, sort_distance, filtration, \
+from MOEA_routing_operators import selection, fast_non_dominated_sort, crowding_distance, sort_distance, filtration, \
     optimizedCX, swap_node, mutation
-from domain_adaptation.probabilistic_model import edge_histogram, sample_solution, remove_variables, add_variables,\
+from domain_adaptation_routing.probabilistic_model import edge_histogram, sample_solution, remove_variables, add_variables,\
     build_mixture_model, mutate_mixture_model, sample_mixture_model
-from domain_adaptation import source_to_target_mapping
+from domain_adaptation_routing import source_to_target_mapping
 import copy
 import math
 
