@@ -173,7 +173,7 @@ if __name__ == "__main__":
 
     #############################################################
 
-        print('MOTrEO (RSM) results for run ', run)
+        print('MOTrEO(RSM) results for run ', run)
         print("\n")
 
         best_IGD = math.inf
