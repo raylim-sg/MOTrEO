@@ -1,5 +1,4 @@
 # This code contains the evolutionary search operators used by the MOEAs in MOEA_routing.py
-# This code also contains non-dominated sorting and crowding distance operators from the NSGA-II
 
 import random
 import numpy as np
