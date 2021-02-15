@@ -13,7 +13,7 @@ import math
 
 
 
-# Original NSGA-II (2 objectives)
+# NSGA-II (2 objectives)
 def NSGA2(function1, function2, max_gen, pop_size, dim, pf_target):
 
     """
@@ -132,7 +132,7 @@ def NSGA2(function1, function2, max_gen, pop_size, dim, pf_target):
 
 
 
-# Original NSGA-II (3 objectives)
+# NSGA-II (3 objectives)
 def NSGA2_3D(function1, function2, function3, max_gen, pop_size, dim, pf_target):
     """
     By default, this algorithm encodes each variable in the range [0,1]. Decoding step is thus needed during evaluations.
@@ -575,7 +575,7 @@ def NSGA2_Ms(function1, function2, max_gen, pop_size, dim, pf_target, source_dat
 
 
 # Proposed multi-objective TrEO algorithm with source-to-target search space mapping Ms (MOTrEO+Ms)
-# Equipped with a probabilistic model-based mechanism to capture source-target similarity
+# Also equipped with a probabilistic model-based transfer mechanism to capture source-target similarity
 def MOTrEO_Ms(function1, function2, max_gen, pop_size, dim, pf_target, source_data=None, source_model_list=None,
                tr_int=None, reg=None, verbose=False):
 
@@ -748,8 +748,8 @@ def MOTrEO_Ms(function1, function2, max_gen, pop_size, dim, pf_target, source_da
 
 
 
-# Multi-objective TrEO algorithm which transfers solutions from a random source model (RSM) (MOTrEO (RSM))
-# The extent of solution transfers is according to the transfer coefficients obtained in the MOTrEO+Ms
+# A multi-objective TrEO algorithm which transfers solutions from a random source model (RSM); abbreviated as MOTrEO(RSM)
+# The extent of solution transfers is based on the transfer coefficients obtained in the MOTrEO+Ms
 def MOTrEO_RSM(function1, function2, max_gen, pop_size, dim, pf_target, tr_int=None,
                 transfer_coefficients=None):
     """
@@ -763,7 +763,7 @@ def MOTrEO_RSM(function1, function2, max_gen, pop_size, dim, pf_target, tr_int=N
     dim: search space dimensionality
     pf_target: target Pareto front
     tr_int: predefined transfer interval
-    transfer_coefficients: coefficients obtained in the MOTrEO+Ms used to determine the extent of knowledge transfers in the MOTrEO(RSM)
+    transfer_coefficients: coefficients obtained in the MOTrEO+Ms, used to determine the extent of knowledge transfers in the MOTrEO(RSM)
     """
 
     if tr_int is None:
