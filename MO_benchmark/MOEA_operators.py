@@ -1,5 +1,4 @@
 # This code contains the evolutionary search operators used by the MOEAs in MOEA.py
-# This code also contains non-dominated sorting and crowding distance operators of the NSGA-II
 
 import random
 import math
