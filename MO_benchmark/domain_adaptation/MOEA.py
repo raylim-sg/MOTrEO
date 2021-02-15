@@ -750,7 +750,7 @@ def MOTrEO_Ms(function1, function2, max_gen, pop_size, dim, pf_target, source_da
 
 # Multi-objective TrEO algorithm which transfers solutions from a random source model (RSM) (MOTrEO (RSM))
 # The extent of solution transfers is according to the transfer coefficients obtained in the MOTrEO+Ms
-def MoTrEO_RSM(function1, function2, max_gen, pop_size, dim, pf_target, tr_int=None,
+def MOTrEO_RSM(function1, function2, max_gen, pop_size, dim, pf_target, tr_int=None,
                 transfer_coefficients=None):
     """
     By default, this algorithm encodes each variable in the range [0,1]. Decoding step is thus needed during evaluations.
