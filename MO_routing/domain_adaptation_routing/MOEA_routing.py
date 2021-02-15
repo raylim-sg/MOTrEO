@@ -548,18 +548,15 @@ def MOTrEO_Ms_routing(task, task_function, max_gen, pop_size, dim, pc, pm, tr_in
     # Perform source-to-target search space mapping
     t_x = copy.deepcopy(task.x_t)
     t_y = copy.deepcopy(task.y_t)
-    # Source1
     s1_x = copy.deepcopy(task.x_s1)
     s1_y = copy.deepcopy(task.y_s1)
     s1_data = copy.deepcopy(task.data_s1)
     s1_data_transformed = source_to_target_mapping.map(task, task.dim_source1, dim, s1_x, s1_y, t_x, t_y, s1_data)
-    # Source2
     if task.number_of_sources > 1:
         s2_x = copy.deepcopy(task.x_s2)
         s2_y = copy.deepcopy(task.y_s2)
         s2_data = copy.deepcopy(task.data_s2)
         s2_data_transformed = source_to_target_mapping.map(task, task.dim_source2, dim, s2_x, s2_y, t_x, t_y, s2_data)
-    # Source3
     if task.number_of_sources > 2:
         s3_x = copy.deepcopy(task.x_s3)
         s3_y = copy.deepcopy(task.y_s3)
