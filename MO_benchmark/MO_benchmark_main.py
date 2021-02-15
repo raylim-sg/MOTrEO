@@ -179,7 +179,7 @@ if __name__ == "__main__":
         best_IGD = math.inf
         result = []
 
-        igd_values = MOEA.MoTrEO_RSM(task.function1_target, task.function2_target, max_gen=max_gen_target,
+        igd_values = MOEA.MOTrEO_RSM(task.function1_target, task.function2_target, max_gen=max_gen_target,
                         pop_size=pop_size_target, dim=task.dim_target, pf_target=pf_target, tr_int=transfer_interval,
                         transfer_coefficients=transfer_coefficients_MO_TrEO_Ms[run])
 
