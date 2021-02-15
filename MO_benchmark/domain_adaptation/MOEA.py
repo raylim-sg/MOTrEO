@@ -799,7 +799,7 @@ def MOTrEO_RSM(function1, function2, max_gen, pop_size, dim, pf_target, tr_int=N
 
     while (gen_no < max_gen):
         non_dominated_sorted_solution = fast_non_dominated_sort(function1_values[:], function2_values[:])
-        print("MOTrEO (RSM) Output for Generation ", gen_no, " :")
+        print("MOTrEO(RSM) Output for Generation ", gen_no, " :")
         parent_front_f11 = []
         parent_front_f22 = []
         non_dominated_sorted_solution[0].sort()
